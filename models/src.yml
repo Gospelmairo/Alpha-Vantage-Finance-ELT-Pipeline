@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: Alt_engin
+    description: "Contains Polygon Finance data of Stock, Forex, Bitcoin and Physical and Digital/Crypto Currencies"
+    tables:
+      - name: vintage_data_table
+        description: "Data about the daily open, high, low, and close (OHLC) for the entire stocks/equities markets."
