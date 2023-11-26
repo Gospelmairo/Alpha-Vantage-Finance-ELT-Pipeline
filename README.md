@@ -1,5 +1,6 @@
-Data Pipeline and Analysis Documentation
-Overview
+# Data Pipeline and Analysis Documentation
+
+## Project Overview
 Welcome to the Vintage Stock Data project, where we seamlessly blend data orchestration with insightful analysis. This documentation provides a comprehensive guide to both the data pipeline orchestrated by Apache Airflow and the data modeling performed using dbt (data build tool).
 
 Data Pipeline with Airflow
