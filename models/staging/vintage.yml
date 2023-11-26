@@ -1,0 +1,73 @@
+version: 2
+
+sources:
+  - name: dbt_mairo
+    description: "Contains Finance data of Stock, Forex and Crypto data"
+    tables:
+      - name: stg_vintage
+        description: "Data about the daily open, high, low, and close (OHLC) for the entire stocks/equities markets."
+        columns:
+          - name: time_stamp
+            description: "The timestamp when the event occurred or the record was created."
+            tests:
+              - not_null:
+                  severity: error
+              - unique:
+                  severity: error
+            data_type: TIME_STAMP
+            constraints:
+              - type: not_null
+              - type: unique
+          
+          - name: open
+            description: "Field that describes the open price for the symbol in the given time period."
+            tests:
+            - not_null:
+                severity: error
+            data_type: FLOAT
+          
+          - name: close
+            description: "The close price for the symbol in the given time period."
+            tests:
+            - not_null:
+                severity: warn
+            data_type: FLOAT
+          
+          - name: low
+            description: "Field that describes the lowest price for the symbol in the given time period."
+            tests:
+            - not_null:
+                severity: error
+            data_type: FLOAT
+          
+          - name: high
+            description: "Field that describes the highest price for the symbol in the given time period."
+            tests:
+            - not_null:
+                severity: warn
+            data_type: FLOAT
+          
+          - name: volume
+            description: "Field that shows the volume weighted average price."
+            data_type: INTEGER
+          
+          - name: symbol
+            description:  "Field that describes the name of the equity of your choice."
+            data_type: STRING
+          
+          - name: output_size
+            description: "Field that describes the highest price for the symbol in the given time period."
+            data_type: STRING
+          
+          - name: time_zone
+            description: "Field that describes the location."
+            data_type: STRING
+          
+          - name: time_interval
+            description: "Time interval between two consecutive data points in the time series."
+            data_type: STRING
+          
+          - name: last_refreshed
+            description: "Field containing the last record refreshed."
+            data_type: TIME_STAMP
+     

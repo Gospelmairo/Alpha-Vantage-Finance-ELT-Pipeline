@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: fact_stock_prices
+    description: "fact table"
+    columns:
+      - name: time_stamp
+        description: "The date result was generated with the primary key of the date table."
+        tests:
+          - not_null:
+              severity: error
+          - unique:
+              severity: error
+
+      - name: open
+        description: "Field that describes the open price for the symbol in the given time period."
+
+      - name: low
+        description: "Field that describes the lowest price for the symbol in the given time period."
+
+      - name: close
+        description: "The close price for the symbol in the given time period."
+
+      - name: high
+        description: "Field that describes the highest price for the symbol in the given time period."
+
+      - name: volume
+        description: "Field that shows the volume weighted average price."
+
+      - name: symbol
+        description: "Field that describes the name of the equity of your choice."
