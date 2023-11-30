@@ -1,0 +1,10 @@
+version: 2
+
+
+sources:
+  - name: Alt_engin
+    database: loftyiceberg
+    schema: Alt_engin
+    tables:
+      - name: vintage_data_table
+
