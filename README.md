@@ -1,9 +1,9 @@
 # Data Pipeline and Analysis Documentation
 
 
-=======
+
 ![image](https://github.com/Gospelmairo/ELT-Datapipeline-using-Airflow-and-DBT/assets/128805659/b5fc3215-19a5-4f6f-9331-f64a97771c80)
->>>>>>> af989902ecd58046117e626c4873d3aa46b552a9
+
 
 
 ## Project Overview
