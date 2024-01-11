@@ -1,6 +1,8 @@
 # Data Pipeline and Analysis Documentation
 
-/Users/apostle/Desktop/Mother of All folders/AltSchool-Data/third_semester/docker_real/airflow_data_engineering/capstone-project/Datapipeline-web-postgres-gcs-bigquery/Screenshot 2024-01-10 at 15.03.13.png
+image.png
+
+
 
 ## Project Overview
 Welcome to the Vintage Stock Data project, where we seamlessly blend data orchestration with insightful analysis. This documentation provides a comprehensive guide to both the data pipeline orchestrated by Apache Airflow and the data modeling performed using dbt (data build tool).
