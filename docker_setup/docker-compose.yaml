@@ -2,9 +2,9 @@ services:
   altschool_de:
     image: postgres:13
     environment:
-      - POSTGRES_USER=root
-      - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=ny_taxi
+      - POSTGRES_USER=****
+      - POSTGRES_PASSWORD=****
+      - POSTGRES_DB=***
     volumes:
       - "./ny_taxi_postgres_data:/var/lib/postgresql/data:rw"
     ports:
@@ -14,8 +14,8 @@ services:
 #  pgadmin:
 #    image: dpage/pgadmin4
 #    environment:
-#      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
-#      - PGADMIN_DEFAULT_PASSWORD=root
+#      - PGADMIN_DEFAULT_EMAIL=***@admin.com
+#      - PGADMIN_DEFAULT_PASSWORD=***
 #    ports:
 #      - "8080:80"
 #    volumes:
@@ -28,36 +28,3 @@ networks:
 
 
 
-
-
-
-# services:
-#   gp_rio:
-#     image: postgres:13
-#     environment:
-#       - POSTGRES_USER=root
-#       - POSTGRES_PASSWORD=altschool
-#       - POSTGRES_DB=nyc_taxi
-#     volumes:
-#       - "./nytaxi_postgres_data:/var/lib/postgresql/data:rw"
-#     ports:
-#       - "5432:5432" 
-#     networks:
-#       - airflow
-#   # pgadmin:
-#   #   image: dpage/pgadmin4
-#   #   environment:
-#   #     - PGADMIN_DEFAULT_EMAIL=admin@admin.com
-#   #     - PGADMIN_DEFAULT_PASSWORD=root
-#   #   ports:
-#   #     - "8081:80"
-#   #   volumes:
-#   #     - ./data_pgadmin:/var/lib/pgadmin
-
-# networks:
-#   airflow:
-#     external:
-#       name: airflow_default
-
-
-  

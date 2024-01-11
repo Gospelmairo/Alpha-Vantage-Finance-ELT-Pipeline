@@ -79,19 +79,19 @@ x-airflow-common:
     AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/google_credentials.json'
 
     # For accessing the GCP projec and GCS bucket from the AIRFLOW Docker Environment
-    GCP_PROJECT_ID: "loftyiceberg"
-    GCP_GCS_BUCKET: "gp_mairo"
+    GCP_PROJECT_ID: "*****"
+    GCP_GCS_BUCKET: "*****"
 
-    API_TOKEN: "0HGP7I40XOIJ14WT"
-    # API_TOKEN: "1dx1fuPevH4rCPF5ENqzUiZjA"
-    APP_SECRET: '2Enk5UhGiuhH7hnsOH2bxEPv-z1eYffDG80q'
-    ENDPOINT: "5cei-gny5.json"
+    API_TOKEN: "*********T"
+    # API_TOKEN: "*********"
+    APP_SECRET: '*********'
+    ENDPOINT: "*********"
 
-    PG_HOST: "altschool_de" #pgdatabase
-    PG_USER: "root"
-    PG_PASSWORD: "root"
+    PG_HOST: "" #pgdatabase
+    PG_USER: ""
+    PG_PASSWORD: ""
     PG_PORT: 5432
-    PG_DATABASE: "ny_taxi"
+    PG_DATABASE: ""
 
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
@@ -323,6 +323,3 @@ volumes:
   postgres-db-volume:
 
 
-# mv /Users/apostle/Downloads/loftyiceberg-8b55433f3b19.json ~/.google/credentials/google_credentials.json
-
-# export GOOGLE_APPLICATION_CREDENTIALS="/Users/apostle/.google/credentials/google_credentials.json"

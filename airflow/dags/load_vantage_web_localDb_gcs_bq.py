@@ -51,7 +51,7 @@ with DAG(
 
     download_web_to_postgres = VintageToPostgresOperator(  # Create a new operator for downloading to PostgreSQL
         task_id='download_to_postgres',
-        api_url='https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=0HGP7I40XOIJ14WT',
+        api_url='https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=*******',
         order_by='open',
         postgres_conn_id='postgres_default',  # Replace with your PostgreSQL connection ID
         schema='public',  # Replace with your PostgreSQL schema
