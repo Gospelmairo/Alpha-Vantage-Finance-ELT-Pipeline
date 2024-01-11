@@ -1,6 +1,5 @@
 # Data Pipeline and Analysis Documentation
 
-![Uploading Screenshot 2024-01-10 at 15.03.13.png…]()
 
 
 /Users/apostle/Desktop/Mother of All folders/AltSchool-Data/third_semester/docker_real/airflow_data_engineering/capstone-project/Datapipeline-web-postgres-gcs-bigquery/Screenshot 2024-01-10 at 15.03.13.png
